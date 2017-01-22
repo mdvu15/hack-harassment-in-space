@@ -57,11 +57,11 @@ namespace VRStandardAssets.ShootingGallery
             transform.position = m_CameraTransform.position;
 
             // Find a rotation for the gun to be pointed at the reticle.
-            Quaternion lookAtRotation = Quaternion.LookRotation (m_Reticle.ReticleTransform.position - m_GunContainer.position);
+            //Quaternion lookAtRotation = Quaternion.LookRotation (m_Reticle.ReticleTransform.position - m_GunContainer.position);
 
             // Smoothly interpolate the gun's rotation towards that rotation.
-            m_GunContainer.rotation = Quaternion.Slerp (m_GunContainer.rotation, lookAtRotation,
-                m_GunContainerSmoothing * Time.deltaTime);
+            //m_GunContainer.rotation = Quaternion.Slerp (m_GunContainer.rotation, lookAtRotation,
+            //    m_GunContainerSmoothing * Time.deltaTime);
         }
 
 
