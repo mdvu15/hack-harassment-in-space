@@ -1,14 +1,14 @@
 fileFormatVersion: 2
 guid: 92ac02b8408a9fe4190b334e8066e085
-timeCreated: 1485064920
+timeCreated: 1485063018
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - m_DestroyPrefab: {instanceID: 0}
-  - m_DestroyClip: {fileID: 8300000, guid: 3308413d150834d4185098e745cb9fe3, type: 3}
-  - m_SpawnClip: {fileID: 8300000, guid: a2251a0903713df4d8e6fc558b3ff27c, type: 3}
-  - m_MissedClip: {fileID: 8300000, guid: aae69c106914e674b924efe07f36f378, type: 3}
+  - m_DestroyClip: {fileID: 8300000, guid: 066dcdcf6b21c9e4d95f89ddbb50f9a1, type: 3}
+  - m_SpawnClip: {fileID: 8300000, guid: a8a40a05d0d850c4ea9e4db19b822f17, type: 3}
+  - m_MissedClip: {fileID: 8300000, guid: bb5e778e4f4b81d44879462de0e3c6a1, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -52,7 +52,7 @@ namespace VRStandardAssets.ShootingGallery
             // Smoothly interpolate this gameobject's rotation towards that of the user/camera.
             transform.rotation = Quaternion.Slerp(transform.rotation, InputTracking.GetLocalRotation(VRNode.Head),
                 m_Damping * (1 - Mathf.Exp(k_DampingCoef * Time.deltaTime)));
-            
+
             // Move this gameobject to the camera.
             transform.position = m_CameraTransform.position;
 
@@ -70,7 +70,7 @@ namespace VRStandardAssets.ShootingGallery
             // If the game isn't playing don't do anything.
             if (!m_ShootingGalleryController.IsPlaying)
                 return;
-            
+
             // Otherwise, if there is an interactible currently being looked at, try to find it's ShootingTarget component.
             ShootingTarget shootingTarget = m_EyeRaycaster.CurrentInteractible ? m_EyeRaycaster.CurrentInteractible.GetComponent<ShootingTarget>() : null;
 
@@ -110,10 +110,10 @@ namespace VRStandardAssets.ShootingGallery
 
             // Turn the line renderer on.
             m_GunFlare.enabled = true;
-            
+
             // Whilst the line renderer is on move it with the gun.
             yield return StartCoroutine (MoveLineRenderer (lineLength));
-            
+
             // Turn the line renderer off again.
             m_GunFlare.enabled = false;
 
@@ -133,7 +133,7 @@ namespace VRStandardAssets.ShootingGallery
             {
                 // ... set the line renderer to start at the gun and finish forward of the gun the determined distance.
                 m_GunFlare.SetPosition(0, m_GunEnd.position);
-                m_GunFlare.SetPosition(1, m_GunEnd.position + m_GunEnd.forward * lineLength);
+                m_GunFlare.SetPosition(1, m_Reticle.ReticleTransform.position);
 
                 // Wait for the next frame.
                 yield return null;
