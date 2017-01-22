@@ -113,11 +113,11 @@ namespace VRStandardAssets.ShootingGallery
         {
             // Hide the reticle since the radial is about to be used.
             m_Reticle.Hide ();
-            
+
             // In order, wait for the outro UI to fade in then wait for an additional delay.
             yield return StartCoroutine (m_UIController.ShowOutroUI ());
             yield return new WaitForSeconds(m_EndDelay);
-            
+
             // Turn on the tap warnings.
             m_InputWarnings.TurnOnDoubleTapWarnings();
             m_InputWarnings.TurnOnSingleTapWarnings();
@@ -172,7 +172,7 @@ namespace VRStandardAssets.ShootingGallery
                 gameTimer -= Time.deltaTime;
                 spawnTimer -= Time.deltaTime;
 
-                // Set the timer bar to be filled by the amount 
+                // Set the timer bar to be filled by the amount
                 m_TimerBar.fillAmount = gameTimer / m_GameLength;
             }
         }
@@ -183,7 +183,7 @@ namespace VRStandardAssets.ShootingGallery
             // Get a reference to a target instance from the object pool.
             GameObject target = m_TargetObjectPool.GetGameObjectFromPool ();
 
-            // Set the target's position to a random position. 
+            // Set the target's position to a random position.
             target.transform.position = SpawnPosition();
 
             // Find a reference to the ShootingTarget script on the target gameobject and call it's Restart function.
@@ -208,7 +208,7 @@ namespace VRStandardAssets.ShootingGallery
                 float x = Random.Range(center.x - extents.x, center.x + extents.x);
                 float y = Random.Range(center.y - extents.y, center.y + extents.y);
                 float z = Random.Range(center.z - extents.z, center.z + extents.z);
-                
+
                 // Return the point these random values make.
                 return new Vector3(x, y, z);
             }
