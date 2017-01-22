@@ -1040,6 +1040,18 @@ Prefab:
       propertyPath: m_Reticle
       value: 
       objectReference: {fileID: 2046500881}
+    - target: {fileID: 8212896, guid: 565fa42cafc247f4f87fd720db4871ad, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 552bf03ec1e459b48897612b44d43c3a, type: 3}
+    - target: {fileID: 8212896, guid: 565fa42cafc247f4f87fd720db4871ad, type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212896, guid: 565fa42cafc247f4f87fd720db4871ad, type: 2}
+      propertyPath: m_Volume
+      value: 0.66
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 565fa42cafc247f4f87fd720db4871ad, type: 2}
   m_IsPrefabParent: 0
